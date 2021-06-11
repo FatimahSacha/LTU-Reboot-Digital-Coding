@@ -17,4 +17,4 @@ Also with the programming lnagugaes I will be learning alongside the projects Iw
 
 What did I find hard?
 
-I didn't quiet understand how the internet worked ....
+I didn't quiet understand how the internet worked 

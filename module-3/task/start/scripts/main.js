@@ -311,7 +311,6 @@ if (items.type === type you are looking for){
  */
 
 
-
 function discount( arr, discountNum, type ) {
     let totalPrice = 0;
     
@@ -344,8 +343,68 @@ function howMany ( arr, type) {
 
 }
 
-console.log(` Total Price : £${howMany(shoppingBasket, "dairy")}`);
+//console.log(` Total Price : £${howMany(shoppingBasket, "dairy")}`);
 // total should be 9
 
 
+/*
+7 times table
+
+for loop:
+    start of loop 
+    condition 
+    increment / step
+
+    start = 1
+    start <= 12 (loop ends at 12)
+    start + 1 (++)
+
+*/
+
+
+
+function multiplyBy(num) {  // function = code you want to use multiple of times
+    for (let counter =0; counter <= 12; counter++ ) {
+
+        let result = counter * num;
+
+        let message = `${counter} * ${num} = ${result}`;
+    
+        //console.log(message);
+    }
+}        
+
+//multiplyBy (3);
+//multiplyBy (6);
+
+let books = [
+    {
+        title: 'Before I sleep' ,
+        author: 'S . J Watson' ,
+        hasRead: true ,
+    }, 
+    {
+        title: 'Famous five' ,
+        author: 'Enid Blyton' ,
+        hasRead: true , 
+    }, 
+    {
+        title: 'Harry potter' ,
+        author: 'J.K. Rowling' ,
+        hasRead: false , 
+    }  
+];
+
+for (let index = 0; index < books.length; index++){
+   // console.log(books[index].hasRead);
+
+    if (books[index].hasRead) {
+        console.log(`You have read : ${books[index].title}`);
+    } else {
+        console.log(`You have not read: ${books[index].title}` );
+    }
+}
+
+
+/* books.forEach(book => console.log(book)); */ 
 
